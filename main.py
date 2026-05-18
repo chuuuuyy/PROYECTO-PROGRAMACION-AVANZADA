@@ -76,7 +76,7 @@ class Inventario:
         for tipo in tipos_validos:
             cantidad = stock.get(tipo, 0)
             if cantidad < self.limite_seguridad:
-                alertas.append(f"  {tipo}: Nivel crítico ({cantidad} unid.)")
+                alertas.append(f"{tipo}: Nivel crítico ({cantidad} unid.)")
         return alertas
 
     def obtener_donantes_frecuentes(self):
@@ -152,9 +152,9 @@ class InterfazApp(tk.Tk):
         self.tab_datos = ttk.Frame(self.notebook)
         self.tab_graficos = ttk.Frame(self.notebook)
 
-        self.notebook.add(self.tab_registro, text="  Registro")
-        self.notebook.add(self.tab_datos, text="  Búsqueda y Reportes")
-        self.notebook.add(self.tab_graficos, text="  Análisis")
+        self.notebook.add(self.tab_registro, text="Registro")
+        self.notebook.add(self.tab_datos, text="Búsqueda y Reportes")
+        self.notebook.add(self.tab_graficos, text="Análisis")
 
         self._construir_tab_registro()
         self._construir_tab_datos()
@@ -262,13 +262,13 @@ class InterfazApp(tk.Tk):
         # Actualizar Alertas
         alertas = self.inventario.verificar_alertas()
         if alertas:
-            self.lbl_alertas.config(text=" ALERTAS DE STOCK:\n" + "\n".join(alertas))
+            self.lbl_alertas.config(text="ALERTAS DE STOCK:\n" + "\n".join(alertas))
         else:
-            self.lbl_alertas.config(text=" Inventario Saludable.", fg="green")
+            self.lbl_alertas.config(text="Inventario Saludable.", fg="green")
 
         # Actualizar Frecuentes
         frecuentes = self.inventario.obtener_donantes_frecuentes()
-        self.lbl_frecuentes.config(text=" DONANTES MÁS FRECUENTES:\n" + frecuentes)
+        self.lbl_frecuentes.config(text="DONANTES MÁS FRECUENTES:\n" + frecuentes)
 
         # Actualizar Gráficos (Distribución y Tendencia)
         self.estadistica.graficar_distribucion(self.frame_pie)
