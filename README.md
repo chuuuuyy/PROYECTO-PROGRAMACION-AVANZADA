@@ -2,7 +2,7 @@
 PROGRAMACION AVANZADA PROYECTO: APLICACIÓN DE REGISTRO PARA UN PROGRAMA DE DONACIÓN DE SANGRE
 
 Sistema de Gestión para Banco de Sangre
-Este es un proyecto individual desarrollado para la materia de Programación Orientada a Objetos (POO). Consiste en una aplicación de escritorio diseñada para optimizar, automatizar y digitalizar el control de inventario, registro de donantes y análisis estadístico en un banco de sangre, eliminando la necesidad de registros manuales tradicionales.
+Este es un proyecto individual desarrollado para la materia de Programacion Avanzada, Programación Orientada a Objetos (POO). Consiste en una aplicación de escritorio diseñada para optimizar, automatizar y digitalizar el control de inventario, registro de donantes y análisis estadístico en un banco de sangre, eliminando la necesidad de registros manuales tradicionales.
 
 Características Principales
 -Gestión y Registro de Donantes: Registro validado de información crítica (Nombre, Edad, Contacto y Grupo Sanguíneo). El sistema calcula la fecha de donación automáticamente.
